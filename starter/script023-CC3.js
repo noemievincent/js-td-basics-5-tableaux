@@ -21,29 +21,32 @@ Il aime donner en guise de pourboire :
 BONNE CHANCE 😀
 */
 
-function iTip (price){
+
+function calculer(price) {
+    let iTip;
     if (price < 50){
         iTip = (price/100)*20;
+        aTips.push(iTip);
+        aBill.push(iTip+price);
     } else if (price > 50 && price <= 200){
         iTip = (price/100)*15;
+        aTips.push(iTip);
+        aBill.push(iTip+price);
     } else if (price > 200){
         iTip = (price/100)*10;
+        aTips.push(iTip);
+        aBill.push(iTip+price);
     }
-    return iTip;
 }
-
-// iTip(124); //18.6
-// iTip(48); //9.6
-// iTip(268); //26.8
 
 const aTips = [];
 const aBill = [];
 
-aTips.push();
-aBill.push();
+calculer(124);
+calculer(48);
+calculer(268);
 
-console.log(iTip);
 
-console.table(aTips);
-console.table(aBill);
+console.table(aTips); //tableau avec tous les pourboires
+console.table(aBill); //tableau avec la somme des pourboires et des factures
 
