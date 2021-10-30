@@ -32,7 +32,7 @@ function iTip (price){
     return iTip;
 }
 
-iTip(124); //18.6
+// iTip(124); //18.6
 // iTip(48); //9.6
 // iTip(268); //26.8
 
@@ -42,6 +42,7 @@ const aBill = [];
 aTips.push();
 aBill.push();
 
+console.log(iTip);
 
 console.table(aTips);
 console.table(aBill);
