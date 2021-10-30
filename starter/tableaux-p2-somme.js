@@ -24,27 +24,22 @@ console.table(aNumbers);
 
 // Solution avec la méthode forEach()
 
-aNumbers.forEach(element => )
-
-
-
-
-
-
-
+let iSum = 0;
+aNumbers.forEach(element => {
+    iSum +=element;
+});
+console.log(`La somme des nombres de mon tableau est ${iSum}`); //42
 
 // Solution avec la méthode for/of
 
-
-
-
-
-
+for (let element of aNumbers){
+    element += element;
+}
+console.log(`La somme des nombres de mon tableau est ${iSum}`); //42
 
 
 // *******************************
 // Solution avec BONUS
-
 
 
 
