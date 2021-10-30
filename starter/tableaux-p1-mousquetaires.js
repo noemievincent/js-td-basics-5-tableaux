@@ -14,5 +14,25 @@ Ecrivez un programme qui :
 */
 
 
+const aMousquetaires = ["Athos", "Porthos", "Aramis"];
+console.log("Voici les Trois Mousquetaires :");
+for (let i = 0; i < aMousquetaires.length; i++){
+    console.log(aMousquetaires[i]);
+}
 
+console.log("");
 
+aMousquetaires.push("d'Artagnan");
+console.log("Ils sont quatre à présent :");
+aMousquetaires.forEach(element => console.log(element));
+// aMousquetaires.forEach(function (element){
+//     console.log(element);
+// });
+
+console.log("");
+
+aMousquetaires.splice(2,1);
+console.log("Le pauvre Aramis est mort…");
+for (const element of aMousquetaires){
+    console.log(element);
+}

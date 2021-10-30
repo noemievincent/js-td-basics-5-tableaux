@@ -36,11 +36,16 @@ EXERCICE 1 :
 - créer un tableau semaine qui contient les noms des jours de la semaine
 - afficher ce tableau dans la console
 */
-
+const aWeek = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+console.log(aWeek);
+const day = function(elem) {
+    console.log(elem);
+}
+aWeek.forEach(day);
 
 // N.B. La fonction console.table() est très intéressante à utiliser pour affciher un tableau
 
-
+console.table(aWeek);
 
 // 2. Accéder à un élément du tableau : l'opérateur d'accession : les "[]"
 console.log(names[2]); // affiche le 3e élément du tableau, ici 'Jane'
@@ -60,6 +65,12 @@ EXERCCICE 2 : afficher dans la console
  */
  // lundi
 // dimanche
+if (aWeek.length > 0){
+    console.log(aWeek[0]);
+    console.log(aWeek[2]);
+    console.log(aWeek[aWeek.length-1]);
+}
+
 
 
 // 3. Nombre d'éléments dans un tableau : la propriété "length" du tableau
@@ -95,7 +106,15 @@ EXERCICE 4 :
 - réafficher le tableau des jours de la semaine
 */ 
 
+aWeek[5] = "Saturday";
+console.table(aWeek);
 
+const jourFerie = aWeek[aWeek.length-1];
+console.log(jourFerie);
+
+aWeek.push("Dimanche2");
+aWeek[aWeek.length] = "Dimanche3";
+console.table(aWeek);
 
 
 // 5. Un tableau peut contenir des données de différents types
@@ -145,7 +164,13 @@ EXERCICE 5 :
 - réafficher le tableau
 */
 
+const aFruits = ["Pomme", "Banane", "Poire", "Pêche", "Orange"];
+aFruits.unshift("Fraise");
+aFruits.push("Myrtille");
+aFruits.pop();
 
+console.table(aFruits);
+console.log(`La poire est mon fruit n°${(aFruits.indexOf("Poire"))+1}, il porte l'indice ${aFruits.indexOf("Poire")}`);
 
 
 

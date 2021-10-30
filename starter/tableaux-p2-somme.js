@@ -18,8 +18,13 @@ Version alternative (avec BONUS) :
 4. Affichez le message final : "… + … + … = …"
 */
 
+const aNumbers = [11, 3, 7, 2, 9, 10];
+console.log("Voici mon tableau de nombre :");
+console.table(aNumbers);
+
 // Solution avec la méthode forEach()
 
+aNumbers.forEach(element => )
 
 
 

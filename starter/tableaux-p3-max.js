@@ -5,7 +5,23 @@ TABLEAUX - PRÉPA 3 : Maximum d'un tableau
 3. Calculez et affichez ensuite la plus grande valeur présente dans le tableau
 	(précédé du message "La plus grande valeur de mon tableau est …")
 4. Changez quelques valeurs dans le tableau (par exemple le 9 en 90) et retestez ;
+*/
 
+const aNumbers = [3, 11, 7, 2, 9, 10];
+console.table(aNumbers);
+
+let iMaxNumber = 3;
+
+for (let i = 1; i < aNumbers.length; i++){
+    if(aNumbers[i] > iMaxNumber){
+        iMaxNumber = aNumbers[i];
+    }
+}
+
+console.log(`La plus grande valeur de mon tableau est ${iMaxNumber}`);
+
+
+/*
 ---
 À ne lire que si vous n'y arrivez pas seul…
 ---

@@ -20,3 +20,29 @@ Il aime donner en guise de pourboire :
 
 BONNE CHANCE 😀
 */
+
+function iTip (price){
+    if (price < 50){
+        iTip = (price/100)*20;
+    } else if (price > 50 && price <= 200){
+        iTip = (price/100)*15;
+    } else if (price > 200){
+        iTip = (price/100)*10;
+    }
+    return iTip;
+}
+
+iTip(124); //18.6
+// iTip(48); //9.6
+// iTip(268); //26.8
+
+const aTips = [];
+const aBill = [];
+
+aTips.push();
+aBill.push();
+
+
+console.table(aTips);
+console.table(aBill);
+
