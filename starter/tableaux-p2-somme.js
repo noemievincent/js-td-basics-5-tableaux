@@ -32,10 +32,11 @@ console.log(`La somme des nombres de mon tableau est ${iSum}`); //42
 
 // Solution avec la méthode for/of
 
+let iSum1 = 0;
 for (let element of aNumbers){
-    element += element;
+    iSum1 += element;
 }
-console.log(`La somme des nombres de mon tableau est ${iSum}`); //42
+console.log(`La somme des nombres de mon tableau est ${iSum1}`); //42
 
 
 // *******************************
