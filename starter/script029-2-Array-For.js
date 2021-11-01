@@ -29,17 +29,14 @@ const aFilms = ["Forrest Gump", "Bohemian Rhapsody", "Le Seigneur des anneaux", 
 
 // Boucle FOR
 
-/*
 console.log("1. BOUCLE FOR");
 
 for (let i = 0; i < aFilms.length; i++){
     console.log(aFilms[i]);
 }
-*/
 
 // Boucle WHILE
 
-/*
 console.log("2. BOUCLE WHILE");
 
 let i = 0;
@@ -47,7 +44,6 @@ while (i < aFilms.length){
     console.log(aFilms[i]);
     i++;
 }
-*/
 
 // Boucle FOR OF
 /*
@@ -58,12 +54,11 @@ for (const element of tableau) {
 Elle a l'avantage de ne pas nécessiter la gestion d'un compteur de boucle.
 */
 
-/*
 console.log("3. BOUCLE FOR OF");
 
-for (const element of aFilms){
+for (const element of aFilms) {
     console.log(element);
-}*/
+}
 
 
 /*
@@ -80,32 +75,32 @@ const aJohn = ["John", "Smith", 1990, "designer", false, "blue"];
 // Boucle FOR
 
 
-// console.log("1. BOUCLE FOR");
-//
-// for (let i = 0; i < aJohn.length; i++){
-//     console.log(aJohn[i]);
-// }
+console.log("1. BOUCLE FOR");
+
+for (let i = 0; i < aJohn.length; i++){
+    console.log(aJohn[i]);
+}
 
 
 // Boucle WHILE
 
 
-// console.log("2. BOUCLE WHILE");
-//
-// let i = 0;
-// while (i < aJohn.length){
-//     console.log(aJohn[i]);
-//     i++;
-// }
+console.log("2. BOUCLE WHILE");
+
+let i = 0;
+while (i < aJohn.length){
+    console.log(aJohn[i]);
+    i++;
+}
 
 
 // Boucle FOR OF
 
-// console.log("3. BOUCLE FOR OF");
-//
-// for (const element of aJohn){
-//     console.log(element);
-// }
+console.log("3. BOUCLE FOR OF");
+
+for (const element of aJohn){
+    console.log(element);
+}
 
 
 /*
@@ -158,13 +153,35 @@ aJohn.forEach(element => console.log(element));
 
 // écriture ES6
 
-aFilms.forEach(function (element){
+aFilms.forEach(element => {
     console.log(element);
 });
-aJohn.forEach(function (element){
+aJohn.forEach(element => {
     console.log(element);
 });
 
+/*
+EXERCICE 5 :
+- créer un tableau "nombres" qui contient les 5 premiers entiers
+- afficher "Voici mon tableau de nombres :" et votre tableau
+- créer un tableau vide "carres" qui contiendra les carrés de vos nombres
+- parcourir le tableau "nombres" avec une boucle forEach et
+	ajouter dans le tableau "carres" le carré de chaque nombre
+- afficher "Voici mon tableau de nombres au carré :" et le tableau contentant les carrés
+*/
+
+const aNumbers = [1, 2, 3, 4, 5];
+const aSquares = [];
+
+console.log("Voici mon tableau de nombre :");
+console.table(aNumbers);
+
+aNumbers.forEach(element =>{
+    aSquares.push(element*element);
+})
+
+console.log("Voici mon tableau de carrés :");
+console.table(aSquares);
 
 
 /* ***************************************************** */
